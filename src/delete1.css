@@ -1,0 +1,314 @@
+/* --- Header --- */
+
+#nav-container > li {
+    margin: max(1.5vw, 1vw + 0.2rem);
+    margin-inline: max(3vw, 1vw + 0.5rem);
+    text-align: center;
+    text-wrap: balance;
+    width: fit-content;
+
+    position: relative;
+}
+
+#nav-container li > a {
+    color: var(--dark-mode-text-color);
+    font-size: clamp(0.2rem, 0.7vw + 0.4rem, 1rem);
+    font-family: var(--font-normal-style);
+
+    padding: 0.3rem;
+
+    transition: 250ms ease-in-out;
+}
+
+#nav-container li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background: var(--dark-mode-text-color);
+    visibility: hidden;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: 0.25s linear;
+}
+#nav-container li a:hover:before,
+#nav-container li a:focus:before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+#nav-icon-container {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: clamp(0.2rem, 1vw + 0.5rem, 1rem);
+    /*padding-right: 2rem;*/
+    margin-right: max(1.5vw, 1vw + 0.1rem);
+    margin-left: auto;
+    color: var(--dark-mode-text-color);
+}
+
+#nav-icon-container li {
+    padding-inline: 0.5rem;
+    cursor: pointer;
+}
+/*
+#nav-icon-container:first-child {
+    margin-left: auto;
+}*/
+
+#nav-dark-mode-toggle > i {
+    width: min(1rem, 1vw + 0.2rem);
+}
+
+#nav-hamburger-menu-toggle > i {
+    display: none;
+    width: min(1rem, 1vw + 0.2rem);
+    margin-left: auto;
+}
+
+/* --- Main --- */
+main {
+    background: var(--dark-mode-bg-color);
+}
+
+#landing-page-container {
+    position: relative;
+    margin-top: -85px;
+}
+
+#main-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1;
+    position: absolute;
+    inset: 0;
+}
+
+#main-heading > h1 {
+    font-family: "Love Light";
+    font-size: clamp(0.5rem, 3vw + 1rem, 4rem);
+    color: var(--dark-mode-text-color);
+    text-shadow: 2px 2px black;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+#main-heading > p {
+    font-family: "Love Light";
+    font-size: clamp(0.3rem, 2vw + 0.8rem, 3rem);
+    color: var(--dark-mode-text-color);
+    text-shadow: 1px 1px black;
+    text-align: center;
+    text-wrap: nowrap;
+}
+
+#main-heading > button {
+    font-family: "Liu Jian Mao Cao";
+    font-size: clamp(0.3em, 1vw + 1em, 2em);
+    font-weight: bold;
+    color: var(--dark-mode-text-color);
+    background-color: hsla(0, 0%, 10%, 40%);
+
+    padding: max(0.8vw, 0.6vw + 0.3em);
+    border: 0;
+
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 500ms ease-in-out;
+}
+
+#main-heading > button:hover {
+    background-color: hsl(0, 0%, 4%);
+}
+
+/* cult.html tartalomhoz */
+
+#cult-main {
+    min-height: 100vh;
+    height: 100%;
+}
+
+#cult-title {
+    font-weight: 400;
+}
+
+#cult-select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-family: var(--font-writing-style);
+    font-size: clamp(0.5rem, 3vw + 1rem, 5rem);
+}
+
+#cult-3-goddess-container {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+
+    margin-top: max(0.8vw, 0.6vw + 0.3rem);
+}
+
+.cult {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+
+    opacity: 0;
+
+    max-width: clamp(3rem, 5vw + 10rem, 20rem);
+    transition: 500ms ease-in-out;
+}
+
+.cult:hover,
+.cult:focus-within {
+    transform: scale(1.1);
+}
+
+.cult > h2 {
+    font-size: clamp(0.3rem, 3vw + 0.5rem, 2rem);
+    font-family: var(--font-writing-style);
+
+    margin: max(0.8vw, 0.6vw + 0.3rem);
+
+    text-align: center;
+    /*text-wrap: balance;*/
+    text-wrap: nowrap;
+}
+
+.cult > p {
+    font-size: clamp(0.3rem, 3vw + 0.5rem, 2rem);
+    font-family: var(--font-writing-style);
+
+    margin: max(0.8vw, 0.6vw + 0.3rem);
+
+    text-align: center;
+    /*text-wrap: balance;*/
+    text-wrap: nowrap;
+}
+
+.cult > img {
+    /*width: 100%;
+    height: 100%;*/
+    width: min(
+        40vw,
+        30vw + 10rem
+    ); /* ez itt egy magic number, kéne rá egy normális min() */
+
+    aspect-ratio: 1 / 1;
+
+    border-radius: 15%;
+
+    transition: 500ms ease-in-out;
+}
+
+.cult > button {
+    font-size: clamp(0.3em, 1vw + 1em, 2em);
+    font-weight: bold;
+    color: var(--dark-mode-text-color);
+    background-color: hsla(0, 0%, 10%, 40%);
+
+    margin: max(0.8vw, 0.6vw + 0.3em);
+    padding: max(0.8vw, 0.6vw + 0.3em);
+    border: 0;
+
+    cursor: pointer;
+    border-radius: 2rem;
+    transition: 500ms ease-in-out;
+}
+
+.cult > button:hover,
+.cult > button:focus-within {
+    background-color: hsl(0, 0%, 4%);
+}
+
+#cult-sylphie:hover,
+#cult-sylphie:focus-within {
+    box-shadow: 0 0 2px hsl(0, 0%, 100%), 0 0 10px hsl(0, 0%, 100%),
+        0 0 25px hsl(150, 75%, 40%), 0 0 50px hsl(150, 75%, 40%),
+        0 0 75px hsl(150, 90%, 40%), 0 0 100px hsl(150, 90%, 40%);
+    background-color: lime;
+}
+
+#cult-roxy:hover,
+#cult-roxy:focus-within {
+    box-shadow: 0 0 2px hsl(0, 0%, 100%), 0 0 10px hsl(0, 0%, 100%),
+        0 0 25px hsl(250, 75%, 40%), 0 0 50px hsl(250, 75%, 40%),
+        0 0 75px hsl(250, 90%, 40%), 0 0 100px hsl(250, 90%, 40%);
+    background-color: blue;
+}
+
+#cult-eris:hover,
+#cult-eris:focus-within {
+    box-shadow: 0 0 2px hsl(0, 0%, 100%), 0 0 10px hsl(0, 0%, 100%),
+        0 0 25px hsl(350, 75%, 40%), 0 0 50px hsl(350, 75%, 40%),
+        0 0 75px hsl(350, 90%, 40%), 0 0 100px hsl(350, 90%, 40%);
+    background-color: crimson;
+}
+
+@media screen and (max-width: 950px) /*and (orientation: portrait) */ {
+    /* itt egy jól kinéző mobile navbar a cél */
+
+    #primary-header {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+    }
+    #nav-logo {
+        display: none;
+    }
+
+    #nav-container li {
+        display: none;
+    }
+
+    #nav-hamburger-menu-toggle > i {
+        display: block;
+    }
+
+    /* Navbar áthelyezése miatt vissza kell állítani a negatív margin-okat*/
+
+    #landing-page-container {
+        margin-top: 0;
+    }
+}
+
+/* Cult oldalhoz */
+@media screen and (max-width: 800px) {
+    #cult-3-goddess-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    #cult-select {
+        padding-block: max(4vw, 3vw + 1rem);
+        font-size: clamp(1rem, 5vw + 1.5rem, 5rem);
+    }
+
+    .cult {
+        max-width: clamp(3rem, 5vw + 20rem, 30rem);
+        margin-bottom: max(10vw, 1vw + 1rem);
+    }
+
+    .cult > h2 {
+        font-size: clamp(1rem, 3vw + 1rem, 3rem);
+    }
+
+    .cult > p {
+        font-size: clamp(1rem, 3vw + 1rem, 3rem);
+    }
+    .cult > button {
+        font-size: clamp(1em, 3vw + 1em, 3em);
+        margin: max(0.8vw, 0.6vw + 0.3em);
+        padding: max(0.8vw, 0.6vw + 0.3em);
+    }
+}
+
+/* Az egész CSS-t átírni id-től class-ra, aztán az egészet megcsinálni tailwind-ben, ha van hozzá kedv */

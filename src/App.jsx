@@ -1,10 +1,9 @@
-import "./App.css"
-import Hello from "./assets/components/Hello"
+import PrimaryNavigation from "./components/PrimaryNavigation"
 
 function App() {
     return (
         <>
-            <Hello />
+            <PrimaryNavigation />
         </>
     )
 }

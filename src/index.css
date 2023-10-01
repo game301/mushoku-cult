@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Love+Light&family=Quando&family=Noto+Music&family=Noto+Sans+Anatolian+Hieroglyphs&family=Rubik+Marker+Hatch&family=Train+One&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- Reset --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+html {
+    /*overflow-x: hidden;*/
+    scroll-behavior: smooth;
+    color-scheme: dark light;
+}
+
+:root {
+    --dark-mode-bg-color: radial-gradient(
+        circle,
+        rgba(23, 19, 109, 1) 0%,
+        rgba(0, 0, 0, 1) 100%
+    );
+
+    --light-mode-bg-color: radial-gradient(
+        circle,
+        rgb(85, 85, 185) 0%,
+        rgb(200, 180, 170) 100%
+    );
+
+    --font-writing-style: "Love Light";
+    --font-board-style: "Liu Jian Mao Cao";
+    --font-normal-style: "Quando";
+
+    --dark-mode-text-color: hsl(0, 0%, 100%);
+    --dark-mode-text-color-hover: hsl(0, 0%, 40%);
+
+    --dark-mode-navbar-bg-color: hsla(220, 23%, 5%, 0.8);
+}
+
+body {
+    font-family: sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+        "Helvetica Neue";
+}
+
+img,
+video,
+iframe,
+picture,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+textarea,
+button,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+}
+
+ul {
+    list-style: none;
+}
+
+/* --- Scrollbar --- */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px grey;
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: hsl(0, 0%, 33%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: hsl(0, 0%, 11%);
+}
+
+/* Css, amit nem sikerült hozzáadni Tailwind-del*/
+
+#nav-logo {
+    text-wrap: balance;
+}
