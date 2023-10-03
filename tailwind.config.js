@@ -83,7 +83,7 @@ export default {
                 cultSmallScreenMarginBottom: "max(10vw, 1vw + 1rem)",
                 // Padding
 
-                mainHeadingButtonPadding: "max(0.8vw, 0.6vw + 0.3em)",
+                mainHeadingButtonPadding: "max(0.8vw, 0.4vw + 0.3em)",
                 cultSelectSmallScreenPaddingBlock: "max(4vw, 3vw + 1rem)",
 
                 // Width

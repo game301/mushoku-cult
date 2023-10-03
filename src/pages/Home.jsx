@@ -39,7 +39,7 @@ const Home = () => {
                     </p>
                     <button
                         id='main-heading-button'
-                        className='dark:text-darkModePrimaryColor border-0 cursor-pointer rounded-[2rem] duration-500 ease-in-out bg-mainHeadingButtonBgColor hover:bg-mainHeadingButtonBgColor font-bold text-fontBoard p-mainHeadingButtonPadding text-mainHeadingButtonFontSize'
+                        className='dark:text-darkModePrimaryColor border-0 cursor-pointer rounded-[2rem] duration-500 ease-in-out bg-mainHeadingButtonBgColor hover:bg-[hsla(0,0%,10%,100%)] font-bold font-fontBoard p-mainHeadingButtonPadding text-mainHeadingButtonFontSize'
                         type='button'
                         onClick={() => {
                             leszopol()
