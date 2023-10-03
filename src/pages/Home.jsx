@@ -1,7 +1,22 @@
+import gsap from "gsap"
+import { useEffect, useRef } from "react"
+
 const Home = () => {
     function leszopol() {
         console.log("leszopol")
     }
+
+    const mainHeadingContainerRef = useRef(null)
+
+    useEffect(() => {
+        const timeline = gsap.timeline({ defaults: { duration: 1 } })
+
+        timeline.to(mainHeadingContainerRef.current, {
+            opacity: 1,
+            y: "0%",
+            ease: "ease-in",
+        })
+    }, []) // Empty dependency array ensures that the effect runs once after the initial render
 
     return (
         <main>
@@ -10,7 +25,8 @@ const Home = () => {
                 className='relative navbarChange:mt-navNegativeMargin mt-0'>
                 <div
                     id='main-heading-container'
-                    className='flex flex-col justify-center items-center z-10 absolute inset-0 bottom-[45%] sm:bottom-[55%] md:bottom-[65%] navbarChange:bottom-0'>
+                    ref={mainHeadingContainerRef}
+                    className='translate-y-[-10%] opacity-0 flex flex-col justify-center items-center z-10 absolute inset-0 bottom-[45%] sm:bottom-[55%] md:bottom-[65%] navbarChange:bottom-0'>
                     <h1
                         id='main-heading'
                         className='whitespace-nowrap text-center [text-shadow:_2px_2px_0_rgb(0_0_0_/_90%)] text-darkModePrimaryColor text-mainHeadingFontSize font-fontWriting'>
