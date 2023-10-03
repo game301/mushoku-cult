@@ -22,30 +22,7 @@ html {
     scroll-behavior: smooth;
     color-scheme: dark light;
 }
-/*
-:root {
-    --dark-mode-bg-color: radial-gradient(
-        circle,
-        rgba(23, 19, 109, 1) 0%,
-        rgba(0, 0, 0, 1) 100%
-    );
 
-    --light-mode-bg-color: radial-gradient(
-        circle,
-        rgb(85, 85, 185) 0%,
-        rgb(200, 180, 170) 100%
-    );
-
-    --font-writing-style: "Love Light";
-    --font-board-style: "Liu Jian Mao Cao";
-    --font-normal-style: "Quando";
-
-    --dark-mode-text-color: hsl(0, 0%, 100%);
-    --dark-mode-text-color-hover: hsl(0, 0%, 40%);
-
-    --dark-mode-navbar-bg-color: hsla(220, 23%, 5%, 0.8);
-}
-*/
 body {
     font-family:
         sans-serif,
