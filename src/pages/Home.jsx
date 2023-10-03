@@ -7,10 +7,10 @@ const Home = () => {
         <main>
             <div
                 id='landing-page-container'
-                className='relative mt-navNegativeMargin'>
+                className='relative navbarChange:mt-navNegativeMargin mt-0'>
                 <div
                     id='main-heading-container'
-                    className='flex flex-col justify-center items-center z-10 absolute inset-0 bottom-[30%] min-[600px]:bottom-[50%] min-[800px]:bottom-[60%] min-[950px]:bottom-0'>
+                    className='flex flex-col justify-center items-center z-10 absolute inset-0 bottom-[45%] sm:bottom-[55%] md:bottom-[65%] navbarChange:bottom-0'>
                     <h1
                         id='main-heading'
                         className='whitespace-nowrap text-center [text-shadow:_2px_2px_0_rgb(0_0_0_/_90%)] text-darkModePrimaryColor text-mainHeadingFontSize font-fontWriting'>
@@ -18,7 +18,7 @@ const Home = () => {
                     </h1>
                     <p
                         id='main-subheading'
-                        className='whitespace-nowrap text-center [text-shadow:_2px_1px_0_rgb(0_0_0_/_90%)] text-darkModePrimaryColor text-mainSubheadingFontSize font-fontWriting'>
+                        className='text-wrap-balance text-center [text-shadow:_2px_1px_0_rgb(0_0_0_/_90%)] text-darkModePrimaryColor text-mainSubheadingFontSize font-fontWriting'>
                         A hely, ahol te is Rudeus vallásának tagja lehetsz!
                     </p>
                     <button
@@ -37,7 +37,7 @@ const Home = () => {
                     autoPlay
                     muted
                     loop
-                    className='w-full h-full object-cover'></video>
+                    className='w-full h-full object-cover aspect-[16/30] navbarChange:aspect-video'></video>
             </div>
         </main>
     )

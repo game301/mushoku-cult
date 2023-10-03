@@ -11,7 +11,7 @@ const NavIconContainer = () => {
                     id='nav-dark-mode-toggle'
                     className='fa-solid fa-sun w-navDarkModeToggleWidth'></i>
             </li>
-            <li className='ps-2 pe-2 cursor-pointer'>
+            <li className='ps-2 pe-2 mr-2 cursor-pointer'>
                 <i id='nav-login' className='fa-solid fa-key'></i>
             </li>
         </ul>
