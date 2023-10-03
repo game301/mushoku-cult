@@ -69,7 +69,7 @@ const Cult = () => {
                     id='cult-sylphie'
                     ref={cultSylphieRef}
                     className='flex flex-col items-center justify-center rounded-[3rem] opacity-0 mb-cultSmallScreenMarginBottom goddessChange:mb-0 max-w-cultSmallScreenMaxWidth goddessChange:max-w-cultMaxWidth duration-500 ease-in-out hover:scale-110 hover:bg-[rgb(0,255,0)] hover:shadow-cultSylphieBoxShadow'>
-                    <h2 className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <h2 className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Goddess of Love
                     </h2>
                     <img
@@ -77,12 +77,12 @@ const Cult = () => {
                         alt='sylphy figurine image'
                         className='w-cultImageWidth aspect-square rounded-[15%] duration-500 ease-in-out'
                     />
-                    <p className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <p className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Sylphiette Greyrat
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
                         Join
                     </button>
                 </div>
@@ -90,7 +90,7 @@ const Cult = () => {
                     id='cult-roxy'
                     ref={cultRoxyRef}
                     className='flex flex-col items-center justify-center rounded-[3rem] opacity-0 mb-cultSmallScreenMarginBottom goddessChange:mb-0 max-w-cultSmallScreenMaxWidth goddessChange:max-w-cultMaxWidth duration-500 ease-in-out hover:scale-110 hover:bg-[rgb(0,0,255)] hover:shadow-cultRoxyBoxShadow'>
-                    <h2 className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <h2 className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Goddess of Wisdom
                     </h2>
                     <img
@@ -98,12 +98,12 @@ const Cult = () => {
                         alt='roxy figurine image'
                         className='w-cultImageWidth aspect-square rounded-[15%] duration-500 ease-in-out'
                     />
-                    <p className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <p className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Roxy Migurdia
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
                         Join
                     </button>
                 </div>
@@ -111,7 +111,7 @@ const Cult = () => {
                     id='cult-eris'
                     ref={cultErisRef}
                     className='flex flex-col items-center justify-center rounded-[3rem] opacity-0 mb-cultSmallScreenMarginBottom goddessChange:mb-0 max-w-cultSmallScreenMaxWidth goddessChange:max-w-cultMaxWidth duration-500 ease-in-out hover:scale-110 hover:bg-[rgb(255,0,0)] hover:shadow-cultErisBoxShadow'>
-                    <h2 className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <h2 className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Goddess of War
                     </h2>
                     <img
@@ -119,12 +119,12 @@ const Cult = () => {
                         alt='eris figurine image'
                         className='w-cultImageWidth aspect-square rounded-[15%] duration-500 ease-in-out'
                     />
-                    <p className='text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
+                    <p className='dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddesschange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap'>
                         Eris Greyrat
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] cursor-pointer duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
                         Join
                     </button>
                 </div>

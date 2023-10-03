@@ -10,7 +10,7 @@ const NavIconContainer = () => {
     return (
         <ul
             id='nav-icon-container'
-            className='flex justify-end items-center text-darkModePrimaryColor ml-auto text-navIconContainerFontSize'>
+            className='flex justify-end items-center dark:text-darkModePrimaryColor ml-auto text-navIconContainerFontSize'>
             <li className='ps-2 pe-2 cursor-pointer'>
                 <i id='nav-search' className='fa-solid fa-magnifying-glass'></i>
             </li>
