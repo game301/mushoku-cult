@@ -114,39 +114,3 @@ ul {
 .text-wrap-balance {
     text-wrap: balance;
 }
-
-@media screen and (max-width: 950px) /*and (orientation: portrait) */ {
-    /* itt egy jól kinéző mobile navbar a cél */
-
-    #primary-header {
-        position: fixed;
-        top: auto;
-        bottom: 0;
-    }
-    #nav-logo {
-        display: none;
-    }
-
-    #nav-container li {
-        display: none;
-    }
-
-    #nav-hamburger-menu-toggle > i {
-        display: block;
-    }
-
-    /* Navbar áthelyezése miatt vissza kell állítani a negatív margin-okat*/
-
-    #landing-page-container {
-        margin-top: 0;
-    }
-
-    /* mobile*/
-    #main-subheading {
-        text-wrap: balance;
-    }
-
-    #landing-page-bg-video {
-        aspect-ratio: 16 / 30;
-    }
-}
