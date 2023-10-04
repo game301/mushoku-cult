@@ -82,7 +82,7 @@ const Cult = () => {
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         Join
                     </button>
                 </div>
@@ -103,7 +103,7 @@ const Cult = () => {
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         Join
                     </button>
                 </div>
@@ -124,7 +124,7 @@ const Cult = () => {
                     </p>
                     <button
                         type='button'
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:p-cultButtonMargin'>
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddesschange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         Join
                     </button>
                 </div>
