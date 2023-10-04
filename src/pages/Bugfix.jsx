@@ -1,5 +1,5 @@
 const Bugfix = () => {
-    return <div>Bugfix</div>
+    return <main>Bugfix</main>
 }
 
 export default Bugfix

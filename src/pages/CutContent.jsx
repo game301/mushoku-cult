@@ -1,5 +1,5 @@
 const CutContent = () => {
-    return <div>Cut Content</div>
+    return <main>Cut Content</main>
 }
 
 export default CutContent

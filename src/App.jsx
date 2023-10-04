@@ -28,16 +28,18 @@ function App() {
 
     return (
         <>
-            <PrimaryNavigation />
-            <Routes>
-                <Route path='/' element={<Home />} />
-                <Route path='/cult' element={<Cult />} />
-                <Route path='/cut-content' element={<CutContent />} />
-                <Route path='/random' element={<Random />} />
-                <Route path='/about' element={<About />} />
-                <Route path='/bugfix' element={<Bugfix />} />
-            </Routes>
-            <Footer />
+            <div id='page-full-height-setter'>
+                <PrimaryNavigation />
+                <Routes>
+                    <Route path='/' element={<Home />} />
+                    <Route path='/cult' element={<Cult />} />
+                    <Route path='/cut-content' element={<CutContent />} />
+                    <Route path='/random' element={<Random />} />
+                    <Route path='/about' element={<About />} />
+                    <Route path='/bugfix' element={<Bugfix />} />
+                </Routes>
+                <Footer />
+            </div>
         </>
     )
 }
