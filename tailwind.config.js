@@ -51,7 +51,7 @@ export default {
                 cultSelectFontSize: "clamp(0.5rem, 3vw + 1rem, 5rem)",
                 cultSelectSmallScreenFontSize:
                     "clamp(1rem, 5vw + 1.5rem, 5rem)",
-                cultSubHeaderFontSize: "clamp(0.3rem, 0.5vw + 0.4rem, 1.8rem)",
+                cultSubHeaderFontSize: "clamp(0.3rem, 0.5vw + 1.4rem, 1.8rem)",
                 cultSubHeaderSmallScreenFontSize:
                     "clamp(1rem, 2vw + 0.8rem, 2.5rem)",
                 cultParagraphFontSize: "clamp(0.3rem, 3vw + 0.5rem, 2rem)",
