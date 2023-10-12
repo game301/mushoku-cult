@@ -102,3 +102,17 @@ ul {
 main {
     flex-grow: 1;
 }
+
+/* Tailwind classes */
+
+.cult {
+    @apply flex flex-col items-center justify-center rounded-[3rem] opacity-0 mb-cultSmallScreenMarginBottom goddessChange:mb-0 max-w-cultSmallScreenMaxWidth goddessChange:max-w-cultMaxWidth duration-500 ease-in-out;
+}
+
+.cult-subheader {
+    @apply dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddessChange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap;
+}
+
+.cult-paragraph {
+    @apply dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddessChange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap;
+}
