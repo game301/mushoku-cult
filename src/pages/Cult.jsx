@@ -1,6 +1,5 @@
 import gsap from "gsap"
 import { useEffect, useRef } from "react"
-import CultBox from "../components/CultBox"
 
 const Cult = () => {
     const cultTitleRef = useRef(null)
@@ -83,16 +82,6 @@ const Cult = () => {
                         Join
                     </button>
                 </div>
-
-                <CultBox
-                    id='cult-roxy'
-                    ref={cultRoxyRef}
-                    cultClasses='cult hover:scale-110 hover:bg-[rgb(0,0,255)] hover:shadow-cultRoxyBoxShadow'
-                    h2Content='Goddess of Wisdom'
-                    pContent='Roxy Migurdia'
-                    imgSrc='./src/assets/img/roxy-figurine.png'
-                    imgAlt='roxy figurine image'
-                />
 
                 <div
                     id='cult-roxy'
