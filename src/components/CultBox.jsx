@@ -1,6 +1,4 @@
-/* eslint-disable react/prop-types */
-
-//import PropTypes from "prop-types"
+import PropTypes from "prop-types"
 
 const CultBox = ({
     id,
@@ -28,7 +26,7 @@ const CultBox = ({
         </div>
     )
 }
-/*
+
 CultBox.PropTypes = {
     id: PropTypes.number.isRequired,
     ref: PropTypes.string.isRequired,
@@ -37,5 +35,5 @@ CultBox.PropTypes = {
     imgSrc: PropTypes.string.isRequired,
     imgAlt: PropTypes.string.isRequired,
 }
-*/
+
 export default CultBox
