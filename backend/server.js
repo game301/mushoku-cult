@@ -2,9 +2,8 @@ import dotenv from "dotenv"
 dotenv.config()
 
 import express, { json } from "express"
-import { connect } from "mongoose"
-
-import workoutRoutes from "./routes/workouts"
+import mongoose from "mongoose"
+import workoutRoutes from "./routes/workouts.js"
 
 // express app
 const app = express()
@@ -20,13 +19,28 @@ app.use((req, res, next) => {
 // routes
 app.use("/api/workouts", workoutRoutes)
 
+const mongoURI =
+    "mongodb+srv://teszt:teszt@mongodbnodetest.21tpgnd.mongodb.net/?retryWrites=true&w=majority"
+
+const port = 4000
+
+const envTest = import.meta.env
+console.log(envTest)
+
 // connect to db
-connect(import.meta.env.MONGO_URI)
+mongoose
+    //.connect(import.meta.env.VITE_MONGO_URI)
+    .connect(mongoURI)
     .then(() => {
         console.log("connected to database")
         // listen to port
-        app.listen(import.meta.env.PORT, () => {
-            console.log("listening for requests on port", import.meta.env.PORT)
+        //app.listen(import.meta.env.VITE_PORT, () => {
+        app.listen(port, () => {
+            console.log(
+                "listening for requests on port",
+                //import.meta.env.VITE_PORT
+                port
+            )
         })
     })
     .catch((err) => {
