@@ -19,13 +19,11 @@ app.use((req, res, next) => {
 // routes
 app.use("/api/workouts", workoutRoutes)
 
-const mongoURI =
-    "mongodb+srv://teszt:teszt@mongodbnodetest.21tpgnd.mongodb.net/?retryWrites=true&w=majority"
+//const port = 4000
+//const mongoURI ="mongodb+srv://teszt:teszt@mongodbnodetest.21tpgnd.mongodb.net/?retryWrites=true&w=majority"
 
-const port = 4000
-
-const envTest = import.meta.env
-console.log(envTest)
+console.log(import.meta.env)
+//console.log(import.meta.env.VITE_PORT)
 
 // connect to db
 mongoose
