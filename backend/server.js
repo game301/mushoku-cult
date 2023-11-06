@@ -1,5 +1,5 @@
-import dotenv from "dotenv"
-dotenv.config()
+//import dotenv from "dotenv"
+//dotenv.config()
 //console.log(dotenv.config())
 
 import envKeys from "./envKeys.js"
@@ -23,6 +23,11 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") })
 //console.log(dotenv.config({ path: __dirname + "/../.env" }))
 */
 
+//console.log(import.meta)
+//console.log(import.meta.url)
+//console.log(import.meta.env)
+//console.log(import.meta.env.VITE_PORT)
+
 // express app
 const app = express()
 
@@ -36,11 +41,6 @@ app.use((req, res, next) => {
 
 // routes
 app.use("/api/workouts", workoutRoutes)
-
-//console.log(import.meta)
-//console.log(import.meta.url)
-//console.log(import.meta.env)
-//console.log(import.meta.env.VITE_PORT)
 
 // connect to db
 mongoose
