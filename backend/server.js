@@ -1,6 +1,6 @@
 import dotenv from "dotenv"
 dotenv.config()
-console.log(dotenv.config())
+//console.log(dotenv.config())
 
 import envKeys from "./envKeys.js"
 
@@ -44,7 +44,7 @@ app.use("/api/workouts", workoutRoutes)
 
 // connect to db
 mongoose
-    //.connect(import.meta.env.VITE_MONGO_URI)
+    //.connect(import.meta.env.MONGO_URI)
     .connect(envKeys.mongoURI)
     .then(() => {
         console.log("connected to database")
