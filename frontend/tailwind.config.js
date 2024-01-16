@@ -57,6 +57,8 @@ export default {
                 cultParagraphFontSize: "clamp(0.3rem, 3vw + 0.5rem, 2rem)",
                 cultButtonFontSize: "clamp(0.3em, 1vw + 0.5em, 1.5em)",
                 cultButtonSmallScreenFontSize: "clamp(0.8em, 2vw + 0.5em, 2em)",
+
+                footerCopyrightSize: "clamp(0.2rem, 1vw + 0.5rem, 0.8rem)",
             },
 
             maxWidth: {
