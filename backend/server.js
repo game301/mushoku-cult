@@ -1,18 +1,21 @@
-import dotenv from "dotenv"
-dotenv.config()
-//console.log(dotenv.config())
-//console.log(process.env)
+require("dotenv").config()
 
-import express, { json } from "express"
-import mongoose from "mongoose"
-
-import workoutRoutes from "./routes/workouts.js"
+const express = require("express")
+const mongoose = require("mongoose")
+const workoutRoutes = require("./routes/workouts")
+const userRoutes = require("./routes/user")
+const cors = require("cors")
 
 // express app
 const app = express()
 
 // middleware
-app.use(json())
+app.use(express.json())
+
+//app.use(cors({ origin: "http://127.0.0.1:4000" }))
+//app.use(cors({ origin: "http://localhost:4000" }))
+//app.use(cors({ origin: "http://localhost:4000/api/user/signup" }))
+app.use(cors({ origin: "*" }))
 
 app.use((req, res, next) => {
     console.log(req.path, req.method)
@@ -21,17 +24,17 @@ app.use((req, res, next) => {
 
 // routes
 app.use("/api/workouts", workoutRoutes)
+app.use("/api/user", userRoutes)
 
 // connect to db
 mongoose
     .connect(process.env.MONGO_URI)
     .then(() => {
-        console.log("connected to database")
-        // listen to port
+        // listen for requests
         app.listen(process.env.PORT, () => {
-            console.log("listening for requests on port", process.env.PORT)
+            console.log("connected to db & listening on port", process.env.PORT)
         })
     })
-    .catch((err) => {
-        console.log(err)
+    .catch((error) => {
+        console.log(error)
     })

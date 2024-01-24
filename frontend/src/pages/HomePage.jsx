@@ -50,7 +50,7 @@ const Home = () => {
                             leszopol()
                         }}
                     >
-                        <Link to='/Cult'>Csatlakozás</Link>
+                        <Link to='/cult'>Csatlakozás</Link>
                     </button>
                 </div>
                 <video

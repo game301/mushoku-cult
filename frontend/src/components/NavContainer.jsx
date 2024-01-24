@@ -8,7 +8,7 @@ const NavContainer = () => {
         >
             <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
                 <Link
-                    to='/Cult'
+                    to='/cult'
                     className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
                 >
                     Cult
@@ -16,7 +16,7 @@ const NavContainer = () => {
             </li>
             <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
                 <Link
-                    to='random'
+                    to='/random'
                     className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
                 >
                     Random Content

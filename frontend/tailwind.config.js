@@ -82,7 +82,9 @@ export default {
                 cultSubHeadingMargin: "max(0.8vw, 0.6vw + 0.3rem)",
                 cultButtonMargin: "max(0.6vw, 0.4vw + 0.2em)",
                 cultButtonSmallScreenMargin: "max(0.6vw, 0.4vw + 0.2em)",
-                cultSmallScreenMarginBottom: "max(10vw, 1vw + 1rem)",
+                cultSmallScreenMarginBottom: "max(8vw, 1vw + 1rem)",
+
+                cultJoinedMargin: "max(10vw, 1vw + 1rem)",
                 // Padding
 
                 mainHeadingButtonPadding: "max(0.8vw, 0.4vw + 0.3em)",
