@@ -72,26 +72,22 @@ const Cult = () => {
         <main id='cult-main' className='min-h-screen h-full'>
             <section
                 id='cult-select'
-                className='flex flex-col items-center font-fontWriting text-cultSelectSmallScreenFontSize pt-cultSelectSmallScreenPaddingBlock pb-cultSelectSmallScreenPaddingBlock goddessChange:text-cultSelectFontSize goddessChange:p-0'
-            >
+                className='flex flex-col items-center font-fontWriting text-cultSelectSmallScreenFontSize pt-cultSelectSmallScreenPaddingBlock pb-cultSelectSmallScreenPaddingBlock goddessChange:text-cultSelectFontSize goddessChange:p-0'>
                 <h1
                     id='cult-title'
                     ref={cultTitleRef}
-                    className='font-bold drop-shadow-[-30px_20px_20px] scale-[2] opacity-0'
-                >
+                    className='font-bold drop-shadow-[-30px_20px_20px] scale-[2] opacity-0'>
                     Choose your Goddess!
                 </h1>
             </section>
             <section
                 id='cult-3-goddess-container'
-                className='flex justify-around mt-cult3GoddessContainerMarginTop flex-col items-center goddessChange:items-start goddessChange:flex-row'
-            >
+                className='flex justify-around mt-cult3GoddessContainerMarginTop flex-col items-center goddessChange:items-start goddessChange:flex-row'>
                 <div
                     id='cult-sylphie'
                     ref={cultSylphieRef}
-                    className='cult hover:scale-110 hover:bg-[rgb(0,255,0)] hover:shadow-cultSylphieBoxShadow'
-                >
-                    <h2 className='cult-subheader'>Goddess of Love</h2>
+                    className='cult hover:scale-110 hover:bg-[rgb(0,255,0)] hover:shadow-cultSylphieBoxShadow'>
+                    <h2 className='cult-subheader '>Goddess of Love</h2>
                     <img
                         src='./src/assets/img/sylphie-cropped1.webp'
                         alt='sylphy figurine image'
@@ -101,8 +97,7 @@ const Cult = () => {
                     <button
                         type='button'
                         onClick={handleIsSylphie}
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'
-                    >
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         {isSylphie ? "Show less" : "Show more"}
                     </button>
                 </div>
@@ -110,8 +105,7 @@ const Cult = () => {
                 <div
                     id='cult-roxy'
                     ref={cultRoxyRef}
-                    className='cult hover:scale-110 hover:bg-[rgb(0,0,255)] hover:shadow-cultRoxyBoxShadow'
-                >
+                    className='cult hover:scale-110 hover:bg-[rgb(0,0,255)] hover:shadow-cultRoxyBoxShadow'>
                     <h2 className='cult-subheader'>Goddess of Wisdom</h2>
                     <img
                         src='./src/assets/img/roxy-cropped2.png'
@@ -122,8 +116,7 @@ const Cult = () => {
                     <button
                         type='button'
                         onClick={handleIsRoxy}
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'
-                    >
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         {isRoxy ? "Show less" : "Show more"}
                     </button>
                 </div>
@@ -131,8 +124,7 @@ const Cult = () => {
                 <div
                     id='cult-eris'
                     ref={cultErisRef}
-                    className='cult hover:scale-110 hover:bg-[rgb(255,0,0)] hover:shadow-cultErisBoxShadow'
-                >
+                    className='cult hover:scale-110 hover:bg-[rgb(255,0,0)] hover:shadow-cultErisBoxShadow'>
                     <h2 className='cult-subheader'>Goddess of War</h2>
                     <img
                         src='./src/assets/img/eris-cropped2.png'
@@ -143,8 +135,7 @@ const Cult = () => {
                     <button
                         type='button'
                         onClick={handleIsEris}
-                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'
-                    >
+                        className='border-0 rounded-[3vw] duration-500 ease-in-out bg-[hsla(0,0%,10%,0.4)] hover:bg-[hsl(0,0%,10%)] dark:text-darkModePrimaryColor font-bold text-cultButtonSmallScreenFontSize goddessChange:text-cultButtonFontSize m-cultButtonSmallScreenMargin p-cultButtonSmallScreenMargin goddessChange:m-cultButtonMargin goddessChange:ps-cultButtonSmallScreenMargin goddessChange:pe-cultButtonSmallScreenMargin goddessChange:pt-0 goddessChange:pb-0'>
                         {isEris ? "Show less" : "Show more"}
                     </button>
                 </div>
@@ -169,8 +160,7 @@ const Cult = () => {
                         </p>
                         <button
                             type=''
-                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'
-                        >
+                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'>
                             Join
                         </button>
                     </div>
@@ -199,8 +189,7 @@ const Cult = () => {
                         </p>
                         <button
                             type=''
-                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'
-                        >
+                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'>
                             Join
                         </button>
                     </div>
@@ -229,8 +218,7 @@ const Cult = () => {
                         </p>
                         <button
                             type=''
-                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'
-                        >
+                            className='block border-[1px] w-2/12 ms-cultJoinedMargin me-cultJoinedMargin border-white rounded p-1 mb-2'>
                             Join
                         </button>
                     </div>
