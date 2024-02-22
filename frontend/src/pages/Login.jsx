@@ -18,37 +18,35 @@ const Login = () => {
             <form className='login' onSubmit={handleSubmit}>
                 <h3>Login</h3>
 
-                <label className='block mb-1'>Email address:</label>
+                <label className='mb-1 block'>Email address:</label>
                 <input
                     type='email'
                     onChange={(e) => setEmail(e.target.value)}
                     value={email}
-                    className='block p-1 mb-1 rounded'
+                    className='mb-1 block rounded p-1'
                 />
-                <label className='block mb-1'>Password:</label>
+                <label className='mb-1 block'>Password:</label>
                 <input
                     type='password'
                     onChange={(e) => setPassword(e.target.value)}
                     value={password}
-                    className='block p-1 mb-2 rounded'
+                    className='mb-2 block rounded p-1'
                 />
                 <div className='flex justify-between'>
                     <button
                         type='submit'
                         disabled={isLoading}
-                        className='border-[1px] border-white rounded p-1 mb-2'
-                    >
+                        className='mb-2 rounded border-[1px] border-white p-1'>
                         Log in
                     </button>
 
                     <button
                         type='button'
-                        className='border-[1px] border-white rounded p-1 mb-2'
-                    >
+                        className='mb-2 rounded border-[1px] border-white p-1'>
                         <Link to='/signup'>Sign Up</Link>
                     </button>
                 </div>
-                <div className='text-sm text-right'>
+                <div className='text-right text-sm'>
                     Do not have an account?
                 </div>
                 {error && <div className='error'>{error}</div>}

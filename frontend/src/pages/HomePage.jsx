@@ -23,33 +23,28 @@ const Home = () => {
         <main>
             <div
                 id='landing-page-container'
-                className='relative navbarChange:mt-navNegativeMargin mt-0'
-            >
+                className='relative mt-0 navbarChange:mt-navNegativeMargin'>
                 <div
                     id='main-heading-container'
                     ref={mainHeadingContainerRef}
-                    className='translate-y-[-10%] opacity-0 flex flex-col justify-center items-center z-10 absolute inset-0 bottom-[45%] sm:bottom-[55%] md:bottom-[65%] navbarChange:bottom-0'
-                >
+                    className='absolute inset-0 bottom-[45%] z-10 flex translate-y-[-10%] flex-col items-center justify-center opacity-0 sm:bottom-[55%] md:bottom-[65%] navbarChange:bottom-0'>
                     <h1
                         id='main-heading'
-                        className='whitespace-nowrap text-center [text-shadow:_2px_2px_0_rgb(0_0_0_/_90%)] dark:text-darkModePrimaryColor text-mainHeadingFontSize font-fontWriting'
-                    >
+                        className='whitespace-nowrap text-center font-fontWriting text-mainHeadingFontSize [text-shadow:_2px_2px_0_rgb(0_0_0_/_90%)] dark:text-darkModePrimaryColor'>
                         Mushoku Cult
                     </h1>
                     <p
                         id='main-subheading'
-                        className='text-wrap-balance text-center [text-shadow:_2px_1px_0_rgb(0_0_0_/_90%)] dark:text-darkModePrimaryColor text-mainSubheadingFontSize font-fontWriting'
-                    >
+                        className='text-wrap-balance text-center font-fontWriting text-mainSubheadingFontSize [text-shadow:_2px_1px_0_rgb(0_0_0_/_90%)] dark:text-darkModePrimaryColor'>
                         A hely, ahol te is Rudeus vallásának tagja lehetsz!
                     </p>
                     <button
                         id='main-heading-button'
-                        className='dark:text-darkModePrimaryColor border-0 rounded-[2rem] duration-500 ease-in-out bg-mainHeadingButtonBgColor hover:bg-[hsla(0,0%,10%,100%)] font-bold font-fontBoard p-mainHeadingButtonPadding text-mainHeadingButtonFontSize'
+                        className='rounded-[2rem] border-0 bg-mainHeadingButtonBgColor p-mainHeadingButtonPadding font-fontBoard text-mainHeadingButtonFontSize font-bold duration-500 ease-in-out hover:bg-[hsla(0,0%,10%,100%)] dark:text-darkModePrimaryColor'
                         type='button'
                         onClick={() => {
                             leszopol()
-                        }}
-                    >
+                        }}>
                         <Link to='/cult'>Csatlakozás</Link>
                     </button>
                 </div>
@@ -59,8 +54,7 @@ const Home = () => {
                     autoPlay
                     muted
                     loop
-                    className='w-full h-full object-cover aspect-[16/30] navbarChange:aspect-video'
-                ></video>
+                    className='aspect-[16/30] h-full w-full object-cover navbarChange:aspect-video'></video>
             </div>
         </main>
     )

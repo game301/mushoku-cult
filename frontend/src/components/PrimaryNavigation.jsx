@@ -20,10 +20,10 @@ const PrimaryNavigation = () => {
             <header
                 id='primary-header'
                 ref={headerRef}
-                className='w-full z-50 fixed top-auto bottom-0 navbarChange:sticky navbarChange:top-0 translate-y-[-100%]'>
+                className='fixed bottom-0 top-auto z-50 w-full translate-y-[-100%] navbarChange:sticky navbarChange:top-0'>
                 <nav
                     id='primary-nav'
-                    className='flex items-center justify-start navbarChange:rounded-b-2xl bg-navbarBgColor '>
+                    className='flex items-center justify-start bg-navbarBgColor navbarChange:rounded-b-2xl '>
                     <Logo />
                     <NavContainer />
                     <NavIconContainer />

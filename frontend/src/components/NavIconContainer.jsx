@@ -27,33 +27,30 @@ const NavIconContainer = () => {
     return (
         <div
             id='nav-icon-container'
-            className='flex justify-end items-center dark:text-darkModePrimaryColor ms-auto text-navIconContainerFontSize'
-        >
-            <button type='button' className='ps-2 pe-2' title='no search'>
+            className='ms-auto flex items-center justify-end text-navIconContainerFontSize dark:text-darkModePrimaryColor'>
+            <button type='button' className='pe-2 ps-2' title='no search'>
                 <i
                     id='nav-search'
                     className={`fa-solid fa-magnifying-glass`}
-                    onClick={handleFocusedOnSearch}
-                ></i>
+                    onClick={handleFocusedOnSearch}></i>
                 {isFocusedOnSearch ? (
-                    <input placeholder='Search' className='p-1 ms-2'></input>
+                    <input placeholder='Search' className='ms-2 p-1'></input>
                 ) : (
                     ""
                 )}
             </button>
-            <button type='button' className='ps-2 pe-2' title='no dark mode'>
+            <button type='button' className='pe-2 ps-2' title='no dark mode'>
                 <i
                     id='nav-dark-mode-toggle'
-                    className={`fa-solid w-navDarkModeToggleWidth fa ${
+                    className={`fa-solid fa w-navDarkModeToggleWidth ${
                         isDarkMode ? "fa-moon" : "fa-sun"
                     }`}
-                    onClick={handleDarkModeToggle}
-                ></i>
+                    onClick={handleDarkModeToggle}></i>
             </button>
 
             {user && (
                 <>
-                    <button type='button' className='ps-2 pe-2 me-2'>
+                    <button type='button' className='me-2 pe-2 ps-2'>
                         <Link to='/user'>
                             <i className='fa-solid fa-user'></i>
                         </Link>
@@ -61,17 +58,15 @@ const NavIconContainer = () => {
                     <button
                         type='button'
                         onClick={handleLogoutClick}
-                        className='ps-2 pe-2 me-2'
-                    >
+                        className='me-2 pe-2 ps-2'>
                         <i
                             id='nav-logout'
-                            className='fa-solid fa-right-from-bracket'
-                        ></i>
+                            className='fa-solid fa-right-from-bracket'></i>
                     </button>
                 </>
             )}
             {!user && (
-                <button className='ps-2 pe-2 me-2'>
+                <button className='me-2 pe-2 ps-2'>
                     <Link to='/login'>
                         <i id='nav-login' className='fa-solid fa-key'></i>
                     </Link>

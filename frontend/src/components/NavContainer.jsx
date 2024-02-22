@@ -4,47 +4,41 @@ const NavContainer = () => {
     return (
         <ul
             id='nav-container'
-            className='flex items-center justify-center text-wrap-balance'
-        >
-            <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
+            className='text-wrap-balance flex items-center justify-center'>
+            <li className='text-wrap-balance relative me-navContainerItemMarginInlineEnd ms-navContainerItemMarginInlineStart hidden w-fit text-center navbarChange:block'>
                 <Link
                     to='/cult'
-                    className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
-                >
+                    className='text-[max(3vw, 1vw + 0.5rem)] hover:scale-x-1 focus:scale-x-1 p-1.5 font-fontNormal text-navContainerItemLinkFontSize duration-300 ease-in-out before:invisible before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full  before:scale-x-0 before:rounded before:duration-200 before:ease-linear before:content-[""] before:hover:visible before:hover:scale-x-[1] dark:text-darkModePrimaryColor dark:before:bg-darkModePrimaryColor'>
                     Cult
                 </Link>
             </li>
-            <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
+            <li className='text-wrap-balance relative me-navContainerItemMarginInlineEnd ms-navContainerItemMarginInlineStart hidden w-fit text-center navbarChange:block'>
                 <Link
                     to='/random'
-                    className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
-                >
+                    className='text-[max(3vw, 1vw + 0.5rem)] hover:scale-x-1 focus:scale-x-1 p-1.5 font-fontNormal text-navContainerItemLinkFontSize duration-300 ease-in-out before:invisible before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full  before:scale-x-0 before:rounded before:duration-200 before:ease-linear before:content-[""] before:hover:visible before:hover:scale-x-[1] dark:text-darkModePrimaryColor dark:before:bg-darkModePrimaryColor'>
                     Random Content
                 </Link>
             </li>
-            <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
+            <li className='text-wrap-balance relative me-navContainerItemMarginInlineEnd ms-navContainerItemMarginInlineStart hidden w-fit text-center navbarChange:block'>
                 <a
                     href='https://mushokutensei.fandom.com/wiki/Mushoku_Tensei_Wiki'
                     target='_blank'
                     rel='noreferrer'
-                    className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
-                >
+                    className='text-[max(3vw, 1vw + 0.5rem)] hover:scale-x-1 focus:scale-x-1 p-1.5 font-fontNormal text-navContainerItemLinkFontSize duration-300 ease-in-out before:invisible before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full before:scale-x-0 before:rounded before:duration-200 before:ease-linear before:content-[""] before:hover:visible before:hover:scale-x-[1] dark:text-darkModePrimaryColor dark:before:bg-darkModePrimaryColor'>
                     Wiki
                 </a>
             </li>
-            <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
+            <li className='text-wrap-balance relative me-navContainerItemMarginInlineEnd ms-navContainerItemMarginInlineStart hidden w-fit text-center navbarChange:block'>
                 <Link
                     to='/about'
-                    className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
-                >
+                    className='text-[max(3vw, 1vw + 0.5rem)] hover:scale-x-1 focus:scale-x-1 p-1.5 font-fontNormal text-navContainerItemLinkFontSize duration-300 ease-in-out before:invisible before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full  before:scale-x-0 before:rounded before:duration-200 before:ease-linear before:content-[""] before:hover:visible before:hover:scale-x-[1] dark:text-darkModePrimaryColor dark:before:bg-darkModePrimaryColor'>
                     About
                 </Link>
             </li>
-            <li className='text-wrap-balance text-center w-fit relative ms-navContainerItemMarginInlineStart me-navContainerItemMarginInlineEnd hidden navbarChange:block'>
+            <li className='text-wrap-balance relative me-navContainerItemMarginInlineEnd ms-navContainerItemMarginInlineStart hidden w-fit text-center navbarChange:block'>
                 <Link
                     to='/bugfix'
-                    className='font-fontNormal before:content-[""] before:absolute before:w-full before:h-[3px] before:bottom-0 before:left-0 dark:before:bg-darkModePrimaryColor before:invisible before:hover:visible before:rounded before:scale-x-0 before:hover:scale-x-[1] before:ease-linear before:duration-200 p-1.5 ease-in-out  dark:text-darkModePrimaryColor text-navContainerItemLinkFontSize text-[max(3vw, 1vw + 0.5rem)] duration-300 hover:scale-x-1 focus:scale-x-1'
-                >
+                    className='text-[max(3vw, 1vw + 0.5rem)] hover:scale-x-1 focus:scale-x-1 p-1.5 font-fontNormal text-navContainerItemLinkFontSize duration-300 ease-in-out before:invisible before:absolute before:bottom-0 before:left-0 before:h-[3px] before:w-full  before:scale-x-0 before:rounded before:duration-200 before:ease-linear before:content-[""] before:hover:visible before:hover:scale-x-[1] dark:text-darkModePrimaryColor dark:before:bg-darkModePrimaryColor'>
                     Bugfix
                 </Link>
             </li>

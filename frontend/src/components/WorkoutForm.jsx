@@ -51,40 +51,39 @@ const WorkoutForm = () => {
             <form className='create' onSubmit={handleSubmit}>
                 <h3>Add a New Workout</h3>
 
-                <label className='block mb-1'>Excersize Title:</label>
+                <label className='mb-1 block'>Excersize Title:</label>
                 <input
                     type='text'
                     onChange={(e) => setTitle(e.target.value)}
                     value={title}
                     className={`${
                         emptyFields.includes("title") ? "error" : ""
-                    } block p-1 mb-1`}
+                    } mb-1 block p-1`}
                 />
 
-                <label className='block mb-1'>Load (in kg):</label>
+                <label className='mb-1 block'>Load (in kg):</label>
                 <input
                     type='number'
                     onChange={(e) => setLoad(e.target.value)}
                     value={load}
                     className={`${
                         emptyFields.includes("load") ? "error" : ""
-                    } block p-1 mb-1 rounded`}
+                    } mb-1 block rounded p-1`}
                 />
 
-                <label className='block mb-1'>Reps:</label>
+                <label className='mb-1 block'>Reps:</label>
                 <input
                     type='number'
                     onChange={(e) => setReps(e.target.value)}
                     value={reps}
                     className={`${
                         emptyFields.includes("reps") ? "error" : ""
-                    } block p-1 mb-2 rounded`}
+                    } mb-2 block rounded p-1`}
                 />
 
                 <button
                     type='submit'
-                    className='border-[1px] border-white rounded p-1 mb-2'
-                >
+                    className='mb-2 rounded border-[1px] border-white p-1'>
                     Add Workout
                 </button>
                 {error && <div className='error'>{error}</div>}
