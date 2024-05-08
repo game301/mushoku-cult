@@ -10,7 +10,7 @@ const NotFound = () => {
                         alt=''
                         className='m-1.5 w-7/12 rounded-[5%]'
                     />
-                    <div>
+                    <div className='flex flex-col items-center'>
                         <h2 className='hover:scale-x-1 focus:scale-x-1 p-1.5 text-center font-fontNormal text-cultSubHeaderSmallScreenFontSize duration-300 ease-in-out dark:text-darkModePrimaryColor'>
                             404 Not Found
                         </h2>

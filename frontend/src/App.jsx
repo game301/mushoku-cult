@@ -5,7 +5,7 @@ import { useAuthContext } from "./hooks/useAuthContext"
 import Footer from "./components/Footer"
 import PrimaryNavigation from "./components/PrimaryNavigation"
 
-import HomePage from "./pages/HomePage"
+import Home from "./pages/Home"
 import Cult from "./pages/Cult"
 import Random from "./pages/Random"
 import About from "./pages/About"
@@ -33,7 +33,7 @@ function App() {
                 <PrimaryNavigation />
 
                 <Routes>
-                    <Route path='/' element={<HomePage />} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/cult' element={<Cult />} />
                     <Route path='/random' element={<Random />} />
                     <Route path='/about' element={<About />} />

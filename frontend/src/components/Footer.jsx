@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 const Footer = () => {
     return (
-        <footer className='flex items-center justify-center'>
+        <footer className='flex items-center justify-center rounded-t-2xl bg-navbarBgColor'>
             <div className='hidden items-center justify-center  text-navIconContainerFontSize dark:text-darkModePrimaryColor navbarChange:flex'>
                 <button type='button' className='pe-2 ps-2'>
                     <a
