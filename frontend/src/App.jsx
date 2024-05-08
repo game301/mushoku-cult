@@ -1,7 +1,6 @@
 import { useEffect } from "react"
 import { Route, Routes, useNavigate, Navigate } from "react-router-dom"
 import { useAuthContext } from "./hooks/useAuthContext"
-//import { gsap } from "gsap"
 
 import Footer from "./components/Footer"
 import PrimaryNavigation from "./components/PrimaryNavigation"
@@ -12,7 +11,6 @@ import Random from "./pages/Random"
 import About from "./pages/About"
 import Bugfix from "./pages/Bugfix"
 
-import Workout from "./pages/Workout"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import UserData from "./pages/UserData"
@@ -41,10 +39,6 @@ function App() {
                     <Route path='/about' element={<About />} />
                     <Route path='/bugfix' element={<Bugfix />} />
 
-                    <Route
-                        path='/workout'
-                        element={user ? <Workout /> : <Navigate to='/login' />}
-                    />
                     <Route
                         path='/user'
                         element={user ? <UserData /> : <Navigate to='/login' />}
