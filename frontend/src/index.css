@@ -107,13 +107,13 @@ main {
 /* Tailwind classes */
 
 .cult {
-    @apply flex flex-col items-center justify-center rounded-[3rem] opacity-0 mb-cultSmallScreenMarginBottom goddessChange:mb-0 max-w-cultSmallScreenMaxWidth goddessChange:max-w-cultMaxWidth duration-500 ease-in-out;
+    @apply mb-cultSmallScreenMarginBottom flex max-w-cultSmallScreenMaxWidth flex-col items-center justify-center rounded-[3rem] opacity-0 duration-500 ease-in-out goddessChange:mb-0 goddessChange:max-w-cultMaxWidth;
 }
 
 .cult-subheader {
-    @apply dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddessChange:text-cultSubHeaderFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap;
+    @apply m-cultSubHeadingMargin whitespace-nowrap text-center font-fontWriting text-cultSubHeaderSmallScreenFontSize dark:text-darkModePrimaryColor goddessChange:text-cultSubHeaderFontSize;
 }
 
 .cult-paragraph {
-    @apply dark:text-darkModePrimaryColor text-cultSubHeaderSmallScreenFontSize goddessChange:text-cultParagraphFontSize font-fontWriting m-cultSubHeadingMargin text-center whitespace-nowrap;
+    @apply m-cultSubHeadingMargin whitespace-nowrap text-center font-fontWriting text-cultSubHeaderSmallScreenFontSize dark:text-darkModePrimaryColor goddessChange:text-cultParagraphFontSize;
 }

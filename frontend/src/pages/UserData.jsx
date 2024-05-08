@@ -12,14 +12,14 @@ const UserData = () => {
                         />
                         <div>
                             <h2 className='text-xl font-bold'>John Doe</h2>
-                            <p className='dark:text-darkModePrimaryColor text-darkModePrimaryColor'>
+                            <p className='text-darkModePrimaryColor dark:text-darkModePrimaryColor'>
                                 john.doe@example.com
                             </p>
                         </div>
                     </div>
                     <div className='border-t border-gray-200 pt-4'>
                         <h3 className='mb-2 text-lg font-bold'>Bio:</h3>
-                        
+
                         <ul>
                             <li>Name: John Doe</li>
                             <li>Age: 30</li>
